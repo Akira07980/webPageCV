@@ -7,29 +7,32 @@
 <link rel="stylesheet" href="css/estilos.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
 </head>
 
 <body>
-<header>
+<header id="header">
 <div class="contenedor">
     <div class="menu">
       <p>GONZALO POVEA</p>
+      <img class="menu-icon" src="img/menu.png">
       <nav>
-        <ul class="lista">
-          <li>Sobre mi</li>
-          <li>Servicios</li>
-          <li>Mis Trabajos</li>
-          <li>¿Por que trabajar conmigo?</li>
-          <li>Blog</li>
-          <li>Contacto</li>
+        <ul class="lista" id="ke">
+          <li><a href="#">Sobre mi</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Mis Trabajos</a></li>
+          <li><a href="#">¿Por que trabajar conmigo?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="titular">
+    <div class="titular"id="tra">
       <h1>Gonzalo Povea</h1>
       <h2>Diseñador, Desarrollador Móvil y Web</h2>
-      <a href="">VER MIS TRABAJOS</a>
+      <a href="mistrabajos.html" id="lol" >VER MIS TRABAJOS</a>
     </div>
 
 </div>
@@ -38,12 +41,11 @@
 <section>
   <h3>Sobre mi</h3>
   <div class="contenedor-sobremi">
-    <img class="imagen-sobremi" src="img/yo.jpg" alt="Gonzalo Povea" title="Jonathan Lifschitz">
+    <img class="imagen-sobremi" src="img/yo.jpg" alt="Gonzalo Povea" title="Gonzalo Povea">
     <div class="contenedor-parrafo-y-boton">
       <p>Mi nombre es Gonzalo Povea y soy diseñador de páginas web. Tengo la experiencia en desarrollo de sitios web para pequeñas y medianas empresas, hasta tiendas en línea con carrito de compras.</p>
       <p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, jQuery, Wordpress. Si necesitás una página web moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que llegaste al lugar correcto.</p>
       <p class="parrafo-final">Podes ponerte en contacto conmigo a través de Facebook, Linkedin o completando el formulario de contacto que se encuentra al final de mi sitio web.</p>
-      <a>VER MIS TRABAJOS</a>
     </div>
 </div>
 </section>
@@ -65,7 +67,8 @@
 
     <div class="servicio violeta">
       <h4>SEO</h4>
-      <p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia</p>
+      <p> Se crea una pagina optimizada gracias a técnicas que se emplean para mejorar el posicionamiento (la visibilidad) en buscadores 
+         de un sitio web en Internet, dentro de los resultados orgánicos en los motores de búsqueda</p>
       <img src="img/seo.png">
     </div>
 
@@ -89,6 +92,52 @@
   </div>
 </section>
 
+<section id="mt">
+  <h3 >Mis trabajos</h3>
 
+<a href="mistrabajos.html" id="lol">Ir a mis trabajos</a>
+</section>
+
+<h3>¿Por qué trabajar conmigo?</h3>
+<div class="contenedor-porque">
+  <div class="porque-singular">
+    <img src="img/velocidad.png">
+    <h4>Velocidad</h4>
+    Me aseguro que tu web carge tan rápido como las paginas de grandes empresas, el 80% de las personas abandona un sitio web si no carga antes de 5 segundos.
+  </div>
+  <div class="porque-singular">
+    <img src="img/mantenimiento.png">
+    <h4>Mantenimiento</h4>
+Mantengo una comunicación constante con el cliente, para enseñarle a modificar contenido mediante cpanel en wordpress o si tiene cualquier tipo de duda/cambio que quiera hacer su sitio web
+  </div>
+  <div class="porque-singular">
+    <img src="img/mobile-icon.png">
+    <h4>Mobile priority</h4>
+    Cada vez más personas navegan desde sus mobiles desde cualquier parte del mundo. Me aseguro que tu web este optimizada para cualquier dispositivo móvil
+  </div>
+</div>
+
+<section id="que-esperas">
+  <div class="contenedor">
+    <h3>¿Que esperas para tener tu pagina web?</h3>
+      <a href="#" id="lol">Hablemos</a>
+  </div>
+</section>
+
+
+<section id="wasap">
+<a href="https://wa.me/949606503">
+<img src="img/whatsapp.png" alt="">
+</a>
+</section>
+
+
+<script src="js/jquery.min.js"></script>
+
+<script>
+  $('.menu-icon').click(function(){
+    $('header nav').slideToggle();
+  })
+</script>
 </body>
 </html>
